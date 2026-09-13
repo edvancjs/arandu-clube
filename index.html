@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W9XCN54J');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clube Arandu — O Templo do Universalismo Espiritual</title>
+<meta name="description" content="Existe dentro de você uma sensibilidade que talvez nunca soube explicar. Um clube pra quem não se encaixa em nenhuma religião — espiritualidade, mediunidade e ancestralidade num só lugar, todos os dias.">
+<!-- TODO: confirmar domínio final (sugestão: clube.aranduacademy.com.br) antes de publicar canonical/OG/CNAME -->
+<link rel="canonical" href="https://clube.aranduacademy.com.br/">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clube.aranduacademy.com.br/">
+<meta property="og:site_name" content="Clube Arandu">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Clube Arandu — O Templo do Universalismo Espiritual">
+<meta property="og:description" content="Existe dentro de você uma sensibilidade que talvez nunca soube explicar. Um clube pra quem não se encaixa em nenhuma religião — espiritualidade, mediunidade e ancestralidade num só lugar, todos os dias.">
+<meta property="og:image" content="https://clube.aranduacademy.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ricardo Di Napoli, fundador da Arandu Academy">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clube Arandu — O Templo do Universalismo Espiritual">
+<meta name="twitter:description" content="Existe dentro de você uma sensibilidade que talvez nunca soube explicar. Um clube pra quem não se encaixa em nenhuma religião.">
+<meta name="twitter:image" content="https://clube.aranduacademy.com.br/assets/img/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Paleta "Templo do Universalismo" — verde-floresta escuro + limão neon,
+       baseada no Canva do Edvan e no Clube-Arandu (1).pdf. Distinta de propósito
+       do bege/verde-oliva claro da Imersão — ver nota de implementação da copy. */
+    --bg: #0C1509;
+    --bg-soft: #16240F;
+    --bg-deep: #070C05;
+    --ink: #F4F7EE;
+    --ink-soft: #C6D4B9;
+    --ink-faint: #8FA57F;
+    --lime: #A0EF3F;
+    --lime-deep: #82C92E;
+    --leaf: #4C8A34;
+    --line: rgba(255,255,255,.12);
+    --panel: rgba(255,255,255,.05);
+    --panel-line: rgba(255,255,255,.14);
+    --white: #FFFFFF;
+    --radius: 18px;
+    --container-max: 1240px;
+    --gap-col: 40px;
+    --pad-x: 24px;
+    --pad-y: 28px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; font-size:112.5%; } /* base 18px — público 40+, mesmo padrão da Imersão */
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size:1rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+  h1,h2,h3{
+    font-family:'Fraunces', Georgia, 'Times New Roman', serif;
+    font-weight:600;
+    line-height:1.2;
+    margin:0 0 16px;
+    color:var(--white);
+  }
+  p{ margin:0 0 16px; }
+  ul{ margin:0; padding:0; list-style:none; }
+
+  /* ===== LAYOUT PRIMITIVES ===== */
+  .section{ padding-block:var(--pad-y); background:var(--bg); }
+  .section-soft{ background:var(--bg-soft); }
+  .section-deep{ background:var(--bg-deep); }
+
+  .container{
+    max-width:var(--container-max);
+    margin:0 auto;
+    padding-inline:var(--pad-x);
+  }
+
+  .prose{ max-width:640px; margin:0 auto; }
+  .prose.left{ margin:0; }
+
+  .split{ display:grid; gap:var(--gap-col); align-items:center; }
+  .split > *{ min-width:0; }
+
+  .brandmark{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.03em;
+    color:var(--white);
+    font-size:1.15rem;
+    margin-bottom:18px;
+  }
+  .brandmark span{
+    font-family:'Yellowtail', cursive;
+    text-transform:none;
+    color:var(--lime);
+    font-size:1.6em;
+    margin-left:6px;
+    letter-spacing:0;
+  }
+
+  .tag{
+    display:inline-block;
+    font-size:.78rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--lime);
+    background:rgba(160,239,63,.12);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+
+  h1{ font-size:2.05rem; }
+  h2{ font-size:1.75rem; }
+  h3{ font-size:1.25rem; }
+  .lede{ font-size:1.08rem; color:var(--ink-soft); }
+
+  .btn{
+    display:inline-block;
+    background:var(--lime);
+    color:var(--bg-deep);
+    font-weight:700;
+    font-size:1rem;
+    text-decoration:none;
+    padding:16px 26px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 24px rgba(160,239,63,.25);
+    transition:background .15s ease, transform .1s ease;
+  }
+  .btn:hover{ background:var(--lime-deep); }
+  .btn:active{ transform:translateY(1px); }
+  .btn-block{ display:block; width:100%; }
+  .btn-center{ text-align:center; margin:20px 0 4px; }
+
+  .trustline{
+    margin-top:16px;
+    font-size:.82rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    font-weight:600;
+  }
+
+  /* HERO */
+  .hero-mosaic{ position:relative; height:190px; }
+  .hero-mosaic img{
+    position:absolute;
+    object-fit:cover;
+    border-radius:var(--radius);
+    box-shadow:0 14px 34px rgba(0,0,0,.55);
+    border:4px solid var(--bg-deep);
+  }
+  .hero-mosaic .m1{ width:56%; height:190px; left:0; top:0; transform:rotate(-2deg); z-index:2; }
+  .hero-mosaic .m2{ width:38%; height:130px; right:0; top:0; transform:rotate(3deg); z-index:1; }
+  .hero-mosaic .m3{ width:34%; height:110px; right:2%; bottom:-56px; transform:rotate(-4deg); z-index:3; }
+
+  /* IDENTIFICAÇÃO */
+  .id-list{ margin:18px 0; }
+  .id-list li{
+    display:flex; gap:12px; padding:14px 0;
+    border-bottom:1px solid var(--line); font-size:1.02rem;
+  }
+  .id-list li:last-child{ border-bottom:none; }
+  .id-dot{ flex:none; width:8px; height:8px; border-radius:50%; background:var(--lime); margin-top:9px; }
+  .id-photo{ border-radius:var(--radius); overflow:hidden; box-shadow:0 14px 34px rgba(0,0,0,.5); }
+  .id-photo img{ width:100%; height:280px; object-fit:cover; object-position:top; }
+
+  .block-photo{ border-radius:var(--radius); overflow:hidden; box-shadow:0 14px 34px rgba(0,0,0,.5); }
+  .block-photo img{ width:100%; height:240px; object-fit:cover; }
+
+  /* QUOTE */
+  blockquote{
+    margin:20px 0; padding:16px 0 16px 22px;
+    border-left:3px solid var(--lime);
+    font-family:'Fraunces', serif; font-size:1.25rem; font-style:italic; color:var(--white);
+  }
+  blockquote cite{ display:block; margin-top:10px; font-family:'Inter',sans-serif; font-style:normal; font-size:.95rem; color:var(--ink-faint); }
+
+  /* RITMO (bloco 6 — cards do que compõe o clube) */
+  .ritmo-grid{ display:grid; gap:18px; margin:22px 0; }
+  .ritmo-card{
+    background:var(--panel); border:1px solid var(--panel-line);
+    border-radius:var(--radius); padding:22px;
+  }
+  .ritmo-card .ritmo-badge{
+    display:inline-block; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--lime); font-weight:700; margin-bottom:8px;
+  }
+  .ritmo-card h3{ font-size:1.1rem; margin-bottom:8px; }
+  .ritmo-card p{ color:var(--ink-soft); margin:0; font-size:.98rem; }
+  .ritmo-card.destaque{ border-color:rgba(160,239,63,.4); background:rgba(160,239,63,.06); }
+
+  .incluido{ margin:18px 0; max-width:520px; }
+  .incluido li{ display:flex; gap:10px; padding:6px 0; text-align:left; color:var(--ink-soft); }
+  .check{ flex:none; color:var(--lime); font-weight:700; }
+  .nota{ font-size:1rem; font-style:italic; color:var(--ink-faint); }
+
+  /* CLUBE DO LIVRO — accordion dos 20 encontros */
+  .livro-cover{
+    display:flex; gap:16px; align-items:center; margin:20px 0;
+    background:var(--panel); border:1px solid var(--panel-line); border-radius:var(--radius); padding:18px 20px;
+  }
+  .livro-cover .livro-icon{ font-size:2.2rem; flex:none; }
+  .livro-cover strong{ display:block; color:var(--white); font-size:1.05rem; }
+  .livro-cover span{ color:var(--ink-faint); font-size:.9rem; }
+  .livro-list{ margin:18px 0; border-top:1px solid var(--line); }
+  .livro-list details{ border-bottom:1px solid var(--line); padding:14px 0; }
+  .livro-num{
+    display:inline-block; min-width:28px; font-family:'Fraunces',serif; color:var(--lime);
+    font-weight:700; margin-right:10px;
+  }
+
+  /* PROVA SOCIAL */
+  .stats{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin:20px 0 4px; max-width:520px; }
+  .stat{ background:var(--panel); border:1px solid var(--panel-line); border-radius:var(--radius); padding:18px 12px; text-align:center; }
+  .stat b{ display:block; font-family:'Fraunces',serif; font-size:1.6rem; color:var(--lime); }
+  .stat span{ font-size:.8rem; color:var(--ink-soft); }
+  .prova-placeholder{
+    border:1px dashed var(--panel-line); border-radius:var(--radius); padding:26px 22px;
+    color:var(--ink-faint); font-style:italic; font-size:.95rem; margin-top:18px;
+  }
+
+  /* OBJEÇÃO */
+  .objecao-photo{ border-radius:var(--radius); overflow:hidden; box-shadow:0 14px 34px rgba(0,0,0,.5); }
+  .objecao-photo img{ width:100%; height:260px; object-fit:cover; object-position:top; }
+  .cards3{ display:grid; gap:14px; margin:18px 0; }
+  .card3{ background:var(--panel); border:1px solid var(--panel-line); border-radius:14px; padding:18px; color:var(--ink-soft); }
+  .card3 b{ display:block; margin-bottom:4px; color:var(--white); }
+
+  /* QUEM É RICARDO */
+  .bio-photos{ display:grid; grid-template-columns:1.2fr .8fr; gap:12px; }
+  .bio-photos img{ border-radius:var(--radius); height:220px; object-fit:cover; box-shadow:0 12px 28px rgba(0,0,0,.5); }
+  .bio-photos img:last-child{ height:220px; object-position:top; }
+
+  /* BANNER DE RITMO */
+  .banner-ritmo{ background:var(--bg-deep); text-align:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .banner-ritmo h3{ margin-bottom:24px; }
+  .banner-cols{ display:grid; gap:24px; max-width:960px; margin:0 auto; }
+  .banner-cols > div{ display:flex; flex-direction:column; align-items:center; gap:4px; }
+  .banner-icon{ font-size:1.4rem; margin-bottom:4px; }
+  .banner-cols strong{ font-size:1rem; color:var(--white); }
+  .banner-cols span{ color:var(--ink-soft); font-size:.88rem; }
+
+  /* INVESTIMENTO */
+  .stack-table{ margin:20px auto 0; max-width:560px; border-top:1px solid var(--line); }
+  .stack-row{ display:flex; justify-content:space-between; gap:16px; padding:11px 0; border-bottom:1px solid var(--line); font-size:.92rem; color:var(--ink-soft); text-align:left; }
+  .stack-row.total{ color:var(--white); font-weight:700; font-size:1rem; border-bottom:none; padding-top:16px; }
+  .preco-box{
+    background:var(--panel); border:1px solid var(--panel-line); border-radius:var(--radius);
+    padding:32px 24px; text-align:center; margin:28px auto 0; max-width:460px;
+  }
+  .preco-tag{ font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint); font-weight:600; }
+  .preco-principal{ font-family:'Fraunces',serif; font-size:3rem; color:var(--lime); margin:8px 0 0; }
+  .preco-principal small{ font-family:'Inter',sans-serif; font-size:1rem; font-weight:600; color:var(--ink-soft); }
+  .preco-plano{ font-weight:700; color:var(--white); margin-bottom:14px; }
+  .preco-legal{ font-size:.82rem; color:var(--ink-faint); margin-bottom:20px; }
+  .preco-lista{ text-align:left; max-width:300px; margin:0 auto 22px; }
+  .preco-lista li{ padding:5px 0; color:var(--ink-soft); }
+
+  /* CARTÃO DE MEMBRO */
+  .cartao-mock{
+    max-width:380px; margin:22px auto 0; aspect-ratio:16/10;
+    background:linear-gradient(135deg, var(--bg-soft), var(--bg-deep));
+    border:1px solid var(--panel-line); border-radius:16px;
+    padding:22px; display:flex; flex-direction:column; justify-content:space-between;
+    box-shadow:0 16px 34px rgba(0,0,0,.5);
+  }
+  .cartao-mock .cartao-titulo{ font-family:'Fraunces',serif; font-weight:700; font-size:1.3rem; color:var(--white); }
+  .cartao-mock .cartao-sub{ font-family:'Yellowtail',cursive; font-size:1.4rem; color:var(--lime); }
+  .cartao-mock .cartao-linha{ font-size:.78rem; color:var(--ink-faint); border-top:1px solid var(--panel-line); padding-top:10px; }
+
+  /* FAQ */
+  details{ border-bottom:1px solid var(--line); padding:16px 0; }
+  details summary{
+    cursor:pointer; font-weight:600; list-style:none; color:var(--white);
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+  }
+  details summary::-webkit-details-marker{ display:none; }
+  details summary::after{ content:'+'; flex:none; font-size:1.3rem; color:var(--lime); font-weight:400; }
+  details[open] summary::after{ content:'–'; }
+  details summary{ font-size:1rem; }
+  details p{ margin-top:12px; margin-bottom:0; color:var(--ink-soft); font-size:.95rem; }
+
+  /* FECHAMENTO */
+  .fechamento-photo{ border-radius:var(--radius); overflow:hidden; box-shadow:0 14px 34px rgba(0,0,0,.5); }
+  .fechamento-photo img{ width:100%; height:260px; object-fit:cover; object-position:top; }
+
+  footer{ background:var(--bg-deep); color:var(--ink-faint); text-align:center; padding:28px 24px; font-size:.85rem; border-top:1px solid var(--line); }
+
+  /* CTA STICKY */
+  .cta-sticky{
+    position:fixed; left:0; right:0; bottom:0;
+    background:var(--bg-deep); border-top:1px solid var(--line);
+    padding:10px 14px; box-shadow:0 -8px 20px rgba(0,0,0,.4);
+    z-index:50; transform:translateY(120%); transition:transform .25s ease;
+  }
+  .cta-sticky.show{ transform:translateY(0); }
+  .cta-sticky .btn{ padding:13px 20px; font-size:.92rem; }
+
+  /* ===== BREAKPOINTS ===== */
+  @media (min-width:768px){ :root{ --pad-x:48px; } }
+
+  @media (min-width:860px){
+    :root{ --pad-y:44px; --gap-col:56px; }
+    h1{ font-size:2.5rem; }
+    h2{ font-size:2rem; }
+
+    .split{ grid-template-columns:1fr; }
+    .split.split-text-first{ grid-template-columns:1.2fr 1fr; }
+    .split.split-photo-first{ grid-template-columns:1fr 1.2fr; }
+
+    .hero-mosaic{ height:440px; }
+    .hero-mosaic .m1{ width:60%; height:320px; left:0; top:20px; }
+    .hero-mosaic .m2{ width:42%; height:210px; right:0; top:0; }
+    .hero-mosaic .m3{ width:38%; height:180px; right:6%; bottom:0; }
+
+    .id-photo img{ height:100%; min-height:360px; }
+    .block-photo img{ height:100%; min-height:320px; }
+    .ritmo-grid{ grid-template-columns:1fr 1fr; }
+    .banner-cols{ grid-template-columns:1fr 1fr 1fr 1fr; }
+    .objecao-photo img{ height:100%; min-height:320px; }
+    .fechamento-photo img{ height:100%; min-height:320px; }
+
+    .cta-sticky{ display:none; }
+  }
+
+  @media (min-width:1200px){ :root{ --pad-x:72px; } }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9XCN54J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- BLOCO 1 — HERO -->
+<section class="section section-deep" id="hero">
+  <div class="container split split-text-first">
+    <div>
+      <div class="brandmark">Arandu <span>Clube</span></div>
+      <span class="tag">O Templo do Universalismo Espiritual</span>
+      <p class="lede" style="margin-bottom:16px;font-weight:600;color:var(--white);">Assinatura Anual | Acesso Imediato</p>
+      <h1>Existe dentro de você uma sensibilidade que talvez nunca soube explicar.</h1>
+      <p class="lede">Não é frescura. Não é loucura. E provavelmente não cabe dentro de uma religião só.</p>
+      <p>Uma vontade de ajudar que não sabe de onde vem. Uma sensação de perceber coisas que os outros não percebem. Uma inquietação espiritual que já te fez procurar em várias portas, e nunca sentir que chegou de vez em nenhuma.</p>
+      <p><strong>Se isso é você: existe um lugar para essa sensibilidade morar. Todos os dias, não só quando tem culto, gira ou atendimento.</strong></p>
+      <a href="#investimento" class="btn btn-block">QUERO FAZER PARTE DESSE TEMPLO</a>
+      <p class="trustline">TODO MÊS · CONTEÚDO NOVO · COMUNIDADE ATIVA</p>
+    </div>
+    <div class="hero-mosaic">
+      <img class="m1" src="assets/img/hero-1.jpg" alt="Ricardo Di Napoli sorrindo, retrato de corpo inteiro">
+      <img class="m2" src="assets/img/hero-2.jpg" alt="Ricardo Di Napoli falando ao microfone no Congresso Arandu">
+      <img class="m3" src="assets/img/hero-3.jpg" alt="Ricardo Di Napoli autografando livro para um aluno">
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 2 — IDENTIFICAÇÃO -->
+<section class="section" id="identificacao">
+  <div class="container split split-text-first">
+    <div>
+      <h2>Você sente que não se encaixa em nenhuma religião?</h2>
+      <p class="lede"><strong>Não precisa se identificar como umbandista, espírita, católico, nada ainda. Só leia com calma:</strong></p>
+      <ul class="id-list">
+        <li><span class="id-dot"></span><span>Já andou por mais de uma religião ou linha espiritual e nunca sentiu que "chegou" de vez?</span></li>
+        <li><span class="id-dot"></span><span>Sente respeito e curiosidade por várias tradições ao mesmo tempo, Umbanda, Espiritismo, Cristo, Budismo, sem conseguir (ou querer) escolher só uma?</span></li>
+        <li><span class="id-dot"></span><span>Já foi chamado de "morno", "sem religião definida" ou "confuso" por não fechar com um caminho só?</span></li>
+        <li><span class="id-dot"></span><span>Acredita em Deus, no Divino, numa força maior, mas não em dogma, culpa ou hierarquia religiosa?</span></li>
+        <li><span class="id-dot"></span><span>Tem uma sensibilidade, uma intuição forte, mas nunca encontrou um espaço que abraçasse essa mistura de crenças sem te julgar?</span></li>
+        <li><span class="id-dot"></span><span>Já se sentiu sozinho nessa busca, como se falasse uma língua espiritual que ninguém ao seu redor entende?</span></li>
+      </ul>
+      <p>Se várias dessas frases tocaram em você, isso tem nome: <strong>você é um universalista.</strong> E provavelmente nem sabia.</p>
+      <div class="btn-center"><a href="#investimento" class="btn">QUERO FAZER PARTE DO CLUBE DOS UNIVERSALISTAS</a></div>
+    </div>
+    <div class="id-photo">
+      <img src="assets/img/identificacao.jpg" alt="Ricardo Di Napoli em conversa, expressão pensativa">
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 3 — REFRAME -->
+<section class="section section-soft" id="reframe">
+  <div class="container split split-photo-first">
+    <div class="block-photo"><img src="assets/img/prova-1.jpg" alt="Ricardo Di Napoli autografando livro para um aluno"></div>
+    <div>
+      <h2>Isso não é falta de fé. É fé demais pra caber dentro de um prédio só.</h2>
+      <p class="lede">A maioria de quem sente isso passa anos calado, achando que é "indeciso" ou tendo vergonha de admitir que não fecha com uma religião só.</p>
+      <p>Religião vem de <em>religare</em>: religar o humano ao sagrado. Mas a sua espiritualidade não precisa de um templo físico, de um dogma fechado ou de uma instituição pra ser real.</p>
+      <p>Você não precisa de mágica, não precisa de ritual obrigatório, e não precisa duvidar de si mesmo por sentir várias verdades ao mesmo tempo. O que falta é um espaço que trate isso como o que é: <strong>um caminho espiritual legítimo, não uma indecisão.</strong></p>
+      <div class="btn-center"><a href="#investimento" class="btn">QUERO FAZER PARTE DO CLUBE ARANDU</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 4 — CAUSA REAL -->
+<section class="section" id="causa">
+  <div class="container split split-text-first">
+    <div>
+      <h2>A causa não é indecisão. É não ter encontrado ainda um espaço universalista de verdade.</h2>
+      <p>Muita gente já foi a um terreiro, uma igreja, um centro espírita, e saiu de lá com mais dúvida do que certeza.</p>
+      <p>Outros já se sentiram enganados ou julgados na própria busca espiritual, e por isso pararam de procurar.</p>
+      <p>O problema nunca foi a sua sensibilidade.</p>
+      <p>Foi a falta de um lugar que juntasse, num só espaço, espiritualidade, mediunidade e ancestralidade, sem te obrigar a escolher um rótulo pra poder ficar.</p>
+      <blockquote>"Fora do conhecimento não há libertação."<cite>— Ricardo Di Napoli</cite></blockquote>
+      <p>Sensibilidade sem espaço vira solidão. Busca sem constância vira cansaço. E cansaço, sem alguém pra sustentar isso com você toda semana, <strong>vira desistência.</strong></p>
+      <div class="btn-center"><a href="#investimento" class="btn">QUERO FAZER PARTE DO CLUBE ARANDU</a></div>
+    </div>
+    <div class="block-photo"><img src="assets/img/prova-2.jpg" alt="Fila de alunos esperando autógrafo de Ricardo Di Napoli"></div>
+  </div>
+</section>
+
+<!-- BLOCO 5 — PONTE -->
+<section class="section section-soft" id="ponte">
+  <div class="container split split-photo-first">
+    <div class="block-photo"><img src="assets/img/prova-3.jpg" alt="Alunos conversando com Ricardo Di Napoli após a palestra"></div>
+    <div>
+      <h2>O templo que cabe no seu bolso.</h2>
+      <p>Imagine ter, todos os dias, um lugar pra voltar e lembrar quem você é, sem precisar sair de casa, sem precisar de terreiro, sem precisar esperar a próxima gira, o próximo culto ou o próximo atendimento.</p>
+      <p>Não é sobre aprender uma religião nova. É sobre ter, finalmente, um espaço que organiza pra você, com fundamento teológico real e sem misticismo vazio, as três forças que já vivem dentro de você: <strong>espiritualidade, mediunidade e ancestralidade.</strong></p>
+      <div class="btn-center"><a href="#investimento" class="btn">QUERO FAZER PARTE DO CLUBE ARANDU</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 6 — O QUE É O CLUBE ARANDU -->
+<section class="section section-deep" id="ritmo">
+  <div class="container">
+    <div class="prose" style="max-width:820px;text-align:center;">
+      <h2>Clube Arandu: nunca mais uma semana sem sinal.</h2>
+      <p class="lede">Toda semana, uma live, uma meditação, uma resposta, pra você nunca mais passar 7 dias sem sentir que a espiritualidade te respondeu.</p>
+    </div>
+    <div class="ritmo-grid">
+      <div class="ritmo-card">
+        <span class="ritmo-badge">Todo mês</span>
+        <h3>Aulão Temático Exclusivo</h3>
+        <p>Ao vivo, sobre espiritualidade, mediunidade ou ancestralidade, com profundidade real, sem enrolação e sem promessa de revelação instantânea.</p>
+      </div>
+      <div class="ritmo-card destaque">
+        <span class="ritmo-badge">Toda semana · Novo</span>
+        <h3>Clube do Livro</h3>
+        <p>Toda segunda-feira, às 17h, ao vivo, Ricardo escolhe uma obra e trabalha ela com os membros, encontro por encontro. Entra gratuita no YouTube — mas só fica lá por 7 dias. Depois, vira arquivo exclusivo de membro.</p>
+      </div>
+      <div class="ritmo-card">
+        <span class="ritmo-badge">Toda semana</span>
+        <h3>2 Meditações guiadas</h3>
+        <p>Gota de Luz: pra você manter o fio da conexão mesmo nos dias corridos, sem precisar esperar a próxima live pra sentir alguma coisa.</p>
+      </div>
+      <div class="ritmo-card">
+        <span class="ritmo-badge">Sempre disponível</span>
+        <h3>Acervo vivo</h3>
+        <p>Trilhas de Espiritualidade, Ancestralidade e Mediunidade, pra estudar no seu ritmo, quantas vezes quiser, sem prazo de validade.</p>
+      </div>
+    </div>
+
+    <div class="prose" style="max-width:520px;">
+      <h3 style="text-align:center;">O que está incluído:</h3>
+      <ul class="incluido">
+        <li><span class="check">✓</span><span>Acesso ao acervo completo de Espiritualidade Talks (80+ gravados, crescendo todo mês)</span></li>
+        <li><span class="check">✓</span><span>Clube do Livro ao vivo toda segunda-feira, às 17h</span></li>
+        <li><span class="check">✓</span><span>Acesso permanente ao arquivo de todos os encontros do Clube do Livro depois que saem do YouTube (quem não é membro perde o acesso depois de 7 dias)</span></li>
+        <li><span class="check">✓</span><span>88 aulas comentadas dos Provérbios de Salomão</span></li>
+        <li><span class="check">✓</span><span>Gravação do Congresso de Espiritualidade e Ancestralidade</span></li>
+        <li><span class="check">✓</span><span>Comunidade exclusiva no WhatsApp pra avisos de aulas e meditações</span></li>
+        <li><span class="check">✓</span><span>Acesso contínuo aos outros cursos que você já é aluno, enquanto for membro</span></li>
+        <li><span class="check">✓</span><span>Frete grátis pra todos os livros da Arandu</span></li>
+        <li><span class="check">✓</span><span>5% de desconto vitalício em qualquer curso novo da Arandu Academy</span></li>
+      </ul>
+      <p class="nota" style="text-align:center;">Você entra num ritmo, não numa lista de tarefas. O clube existe pra você nunca mais sentir aquele vácuo de "faz tempo que eu não sinto nada".</p>
+      <div class="btn-center"><a href="#investimento" class="btn">QUERO FAZER PARTE DO CLUBE ARANDU</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 6A — CLUBE DO LIVRO (dedicado) -->
+<section class="section" id="clube-do-livro">
+  <div class="container prose" style="max-width:760px;">
+    <span class="tag">Novidade no Clube</span>
+    <h2>O Clube do Livro: uma obra por vez, ao vivo, todo mundo lendo junto.</h2>
+    <p>Toda segunda-feira, às 17h, Ricardo entra ao vivo pra trabalhar um livro com os membros do Clube, capítulo por capítulo, com o mesmo cuidado teológico de 40 anos de estudo. A transmissão é gratuita no YouTube, mas fica disponível só por 7 dias. Depois, sai do ar e vira exclusividade de quem é membro do Clube Arandu.</p>
+
+    <div class="livro-cover">
+      <span class="livro-icon">📖</span>
+      <div>
+        <strong>Primeira obra: O Livro dos Médiuns, de Allan Kardec</strong>
+        <span>20 encontros, um por semana, cobrindo a obra inteira</span>
+      </div>
+    </div>
+
+    <div class="livro-list">
+      <details>
+        <summary><span class="livro-num">01</span>Há Espíritos?</summary>
+        <p>Introdução aos fundamentos: alma, Espírito, sobrevivência, perispírito e possibilidade de comunicação.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">02</span>O maravilhoso e o sobrenatural</summary>
+        <p>Diferença entre fenômeno desconhecido, superstição e aquilo que chamamos de sobrenatural.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">03</span>Método: como estudar os fenômenos espíritas</summary>
+        <p>Como investigar sem cair nem na credulidade ingênua nem na negação automática.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">04</span>Sistemas e hipóteses explicativas</summary>
+        <p>Análise das diferentes explicações para os fenômenos: fraude, imaginação, alucinação, causas físicas e hipótese espiritual.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">05</span>Ação dos Espíritos sobre a matéria</summary>
+        <p>Como Kardec explica a relação entre Espírito, perispírito, fluido e matéria.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">06</span>Manifestações físicas espontâneas</summary>
+        <p>Ruídos, pancadas, movimentos de objetos e outros fenômenos físicos.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">07</span>Manifestações visuais e aparições</summary>
+        <p>Aparições, visão espiritual, percepção, imaginação e teoria da alucinação.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">08</span>Bicorporeidade, transfiguração e laboratório do mundo invisível</summary>
+        <p>Fenômenos de aparição de pessoas vivas, transfiguração e alterações atribuídas à ação espiritual sobre a matéria.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">09</span>Lugares assombrados e influência dos ambientes</summary>
+        <p>Como compreender relatos de ambientes carregados, casas assombradas e percepções ligadas aos lugares.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">10</span>Natureza das comunicações espirituais</summary>
+        <p>Diferenças entre comunicações grosseiras, frívolas, sérias e instrutivas; introdução às formas de comunicação.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">11</span>Os diferentes tipos de médiuns</summary>
+        <p>Médiuns sensitivos, audientes, falantes, videntes, psicógrafos, curadores e outras modalidades.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">12</span>Formação e desenvolvimento dos médiuns</summary>
+        <p>Como a mediunidade pode se desenvolver, suas diferenças individuais e também sua perda ou suspensão.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">13</span>Inconvenientes e perigos da mediunidade</summary>
+        <p>Cuidados com a prática, excessos, saúde, equilíbrio e limites no desenvolvimento mediúnico.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">14</span>O papel do médium e o animismo</summary>
+        <p>Quanto da comunicação pertence ao Espírito e quanto passa pela mente, linguagem e repertório do médium.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">15</span>Influência moral do médium e do ambiente</summary>
+        <p>Como comportamento, intenção, vaidade, disciplina e ambiente podem interferir nas comunicações.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">16</span>Mediunidade nos animais</summary>
+        <p>O que Kardec discute sobre animais, sensibilidade, percepção e possíveis fenômenos associados.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">17</span>Obsessão, fascinação e subjugação</summary>
+        <p>Estudo das diferentes formas de influência espiritual e dos meios propostos para enfrentá-las.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">18</span>Identidade dos Espíritos</summary>
+        <p>Como avaliar quem estaria comunicando; critérios para não se deixar impressionar por nomes famosos ou supostas autoridades espirituais.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">19</span>Evocações e perguntas aos Espíritos</summary>
+        <p>O que perguntar, o que evitar, limites éticos e riscos de terceirizar decisões pessoais ao mundo espiritual.</p>
+      </details>
+      <details>
+        <summary><span class="livro-num">20</span>Contradições, mistificações, fraude e reuniões espíritas</summary>
+        <p>Grande fechamento sobre discernimento, charlatanismo, mistificação, organização de grupos e critérios para uma prática séria.</p>
+      </details>
+    </div>
+
+    <p class="nota">Depois do Livro dos Médiuns, vem a próxima obra, o Clube do Livro nunca para.</p>
+    <div class="btn-center"><a href="#investimento" class="btn">QUERO ACOMPANHAR O CLUBE DO LIVRO</a></div>
+  </div>
+</section>
+
+<!-- BLOCO 7 — PROVA -->
+<section class="section section-soft" id="prova">
+  <div class="container prose" style="max-width:760px; text-align:center;">
+    <h2>80+ Espiritualidade Talks gravados. 88 aulas de Provérbios de Salomão. Um Congresso inteiro documentado. E toda segunda, um novo encontro do Clube do Livro. Isso é só o que já existe hoje.</h2>
+    <p>Ricardo não construiu esse acervo em uma semana de gravação corrida. São mais de 40 anos de vivência espiritual condensados num conteúdo que já existe, já está pronto, e já está esperando por você, crescendo toda semana com mais aulões, mais meditações, mais encontros do Clube do Livro.</p>
+    <div class="stats" style="margin-inline:auto;">
+      <div class="stat"><b>40 anos</b><span>de estudo e vivência espiritual</span></div>
+      <div class="stat"><b>1.000+</b><span>alunos já formados</span></div>
+      <div class="stat"><b>3 livros</b><span>publicados pela Editora Arandu</span></div>
+    </div>
+    <div class="prova-placeholder">
+      Em breve, depoimentos de quem já caminha como membro do Clube Arandu — este espaço será
+      atualizado assim que os primeiros relatos de membros chegarem.
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 8 — OBJEÇÃO -->
+<section class="section" id="objecao">
+  <div class="container split split-photo-first">
+    <div class="objecao-photo">
+      <img src="assets/img/objecao.jpg" alt="Ricardo Di Napoli sorrindo, de mãos dadas com um participante">
+    </div>
+    <div>
+      <h2>"Mas eu não sou de nenhuma religião. Dá pra participar mesmo assim?"</h2>
+      <p class="lede" style="font-weight:600;color:var(--white);">Sim. O Clube Arandu foi feito especialmente pra quem:</p>
+      <div class="cards3">
+        <div class="card3"><b>Nunca teve religião nenhuma,</b> mas sente que precisa entender essa sensibilidade que carrega</div>
+        <div class="card3"><b>Já é de uma linha espiritual</b> — Umbanda, Espiritismo, Cristianismo, o que for — e quer se aprofundar sem abandonar a própria fé nem precisar escolher um "lado"</div>
+        <div class="card3"><b>Já andou por várias portas espirituais,</b> testou de tudo, e só queria um lugar que juntasse tudo isso com coerência, em vez de mais uma promessa isolada</div>
+      </div>
+      <p>Você não precisa ter certeza de nada ainda. <strong>Não precisa "ser" nada ainda.</strong> O Clube Arandu não converte ninguém pra religião nenhuma, ele te ajuda a entender, com fundamento, o que você já sente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 9 — QUEM É RICARDO -->
+<section class="section section-soft" id="quemeh">
+  <div class="container split split-photo-first">
+    <div class="bio-photos">
+      <img src="assets/img/bio-1.jpg" alt="Ricardo Di Napoli, retrato de corpo inteiro">
+      <img src="assets/img/bio-2.jpg" alt="Ricardo Di Napoli em conversa, ambiente de palestra">
+    </div>
+    <div>
+      <h2>Quem é Ricardo Di Napoli</h2>
+      <p><strong>Ricardo Di Napoli</strong> é administrador, filósofo e teólogo, universalista, com mais de 40 anos de vivência espiritual, incluindo décadas de estudo dentro da Umbanda e do Espiritismo. Já formou mais de 1.000 alunos, é autor de 3 livros pela Editora Arandu e fundador da Arandu Academy.</p>
+      <p>Sua proposta nunca foi fechar ninguém dentro de uma religião. Foi criar um espaço onde diferentes tradições espiritualistas dialogam e se complementam, pra quem busca entender a própria espiritualidade sem depender de ninguém pra interpretá-la por você.</p>
+      <blockquote>
+        "Não se trata de decorar conceitos ou passagens de um livro só. Se trata de permitir que algo desperte em você, e isso não cabe numa religião fechada. Cabe num templo aberto."
+        <cite>— Ricardo Di Napoli</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 10 — BANNER DE RITMO -->
+<section class="section banner-ritmo" id="como-funciona">
+  <div class="container">
+    <h3>Como funciona o Clube, na prática</h3>
+    <div class="banner-cols">
+      <div><span class="banner-icon">📅</span><strong>Todo mês</strong><span>1 Aulão Temático Exclusivo, ao vivo</span></div>
+      <div><span class="banner-icon">📖</span><strong>Toda segunda, 17h</strong><span>Clube do Livro ao vivo (grátis 7 dias no YouTube, depois exclusivo)</span></div>
+      <div><span class="banner-icon">🎧</span><strong>Toda semana</strong><span>2 Meditações guiadas (Gota de Luz)</span></div>
+      <div><span class="banner-icon">💬</span><strong>Sempre</strong><span>Comunidade ativa no WhatsApp + acervo completo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 11 — INVESTIMENTO -->
+<section class="section section-deep" id="investimento">
+  <div class="container">
+    <div class="prose" style="text-align:center;">
+      <h2>Qual o investimento pra fazer parte?</h2>
+
+      <div class="stack-table">
+        <div class="stack-row"><span>2 meditações por semana</span><span>R$ 497,00</span></div>
+        <div class="stack-row"><span>Clube do Livro</span><span>R$ 497,00</span></div>
+        <div class="stack-row"><span>Acervo de Espiritualidade Talks (80+ e crescendo)</span><span>R$ 4.000,00</span></div>
+        <div class="stack-row"><span>Frete grátis pra todos os livros</span><span>R$ 50,00</span></div>
+        <div class="stack-row"><span>Gravação de todos os Desafios de Meditação</span><span>R$ 497,00</span></div>
+        <div class="stack-row"><span>Curso extra — 88 aulas de Provérbios de Salomão</span><span>R$ 297,00</span></div>
+        <div class="stack-row"><span>5% de desconto vitalício em qualquer curso Arandu</span><span>R$ 100,00</span></div>
+        <div class="stack-row"><span>Conteúdos futuros (novas trilhas, convidados)</span><span>Imensurável</span></div>
+        <div class="stack-row total"><span>Total</span><span>R$ 5.938,00</span></div>
+      </div>
+
+      <div class="preco-box">
+        <div class="preco-tag">Apenas</div>
+        <div class="preco-principal">R$ 39,70<small>/mês</small></div>
+        <div class="preco-plano">Plano Anual</div>
+        <p class="preco-legal">Valor do plano anual, parcelado em até 12x no cartão — não é uma cobrança mensal avulsa.</p>
+        <ul class="preco-lista">
+          <li>✓ Acesso imediato a todo o acervo</li>
+          <li>✓ Aulão mensal + 2 meditações por semana</li>
+          <li>✓ Clube do Livro</li>
+          <li>✓ Comunidade + acesso contínuo aos cursos que você já tem</li>
+        </ul>
+        <a href="https://pagamento.aranduacademy.com.br/subscribe/clube-arandu-plano-anual-oficial-397" class="btn btn-block" id="cta-checkout">QUERO SER MEMBRO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 12 — CARTÃO DE MEMBRO -->
+<section class="section" id="cartao">
+  <div class="container prose" style="text-align:center; max-width:640px;">
+    <h2>Você não vira só mais um assinante. Você vira Membro do Clube Arandu.</h2>
+    <p>Todo membro recebe um Cartão de Membro, símbolo físico de que você deixou de ser espectador de live e virou parte do templo. Em tupi-guarani, Arandu significa sabedoria ancestral, inteligência sagrada que nasce do silêncio da floresta. Ser membro é trilhar o caminho do saber que cura.</p>
+    <div class="cartao-mock">
+      <div>
+        <div class="cartao-titulo">CLUBE ARANDU</div>
+        <div class="cartao-sub">Membro</div>
+      </div>
+      <div class="cartao-linha">NOME: _______________________ · Nº DO MEMBRO: __________</div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 13 — GARANTIA -->
+<section class="section section-soft" id="garantia">
+  <div class="container prose" style="text-align:center;">
+    <h2>Garantia incondicional de 7 dias</h2>
+    <p>Você pode se inscrever hoje e começar a explorar todo o conteúdo do Clube Arandu, os aulões, o Clube do Livro, as meditações, o acervo, a comunidade.</p>
+    <p>Se em 7 dias você sentir que não é pra você, basta mandar um e-mail pro nosso time e devolvemos 100% do seu investimento. Sem pergunta, sem letra miúda.</p>
+  </div>
+</section>
+
+<!-- BLOCO 14 — FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="prose">
+      <h2>Dúvidas Frequentes</h2>
+      <details>
+        <summary>Preciso ser de uma religião específica pra entrar no Clube?</summary>
+        <p>Não. O Clube Arandu é universalista: serve pra quem não tem religião nenhuma, pra quem já é de uma linha espiritual e quer se aprofundar, e pra quem só quer entender a própria sensibilidade com fundamento.</p>
+      </details>
+      <details>
+        <summary>O conteúdo é só sobre Umbanda?</summary>
+        <p>Não. O Clube reúne conteúdo de espiritualidade, mediunidade e ancestralidade sob um olhar universalista, e a proposta de Ricardo é trazer, com o tempo, convidados de outras tradições também (Doutrina Espírita, Ciência e Espiritualidade, entre outras).</p>
+      </details>
+      <details>
+        <summary>Como funciona o Clube do Livro?</summary>
+        <p>Toda segunda-feira, às 17h, Ricardo entra ao vivo no YouTube pra trabalhar um livro com os membros, capítulo por capítulo. A live fica gratuita no YouTube por 7 dias, depois disso sai do ar e passa a ficar disponível só pra quem é membro do Clube Arandu. A primeira obra é O Livro dos Médiuns, de Allan Kardec, em 20 encontros.</p>
+      </details>
+      <details>
+        <summary>Vou ser convidado a abandonar minha fé atual?</summary>
+        <p>Não. Ricardo se define como universalista e ensina com respeito por todas as tradições. A proposta é te ajudar a entender sua espiritualidade com fundamento, nunca converter ninguém.</p>
+      </details>
+      <details>
+        <summary>Preciso ter mediunidade desenvolvida ou já ter tido experiências de incorporação?</summary>
+        <p>Não. O Clube trabalha percepção, intuição e fundamento teológico. A mediunidade é um dos temas, não um requisito de entrada.</p>
+      </details>
+      <details>
+        <summary>Como funciona a renovação da assinatura?</summary>
+        <p>O Clube Arandu é uma assinatura anual. Enquanto você for membro, o valor da sua assinatura fica travado nessa condição, mesmo que o valor de entrada suba pra novos membros.</p>
+      </details>
+      <details>
+        <summary>Dá pra acessar pelo celular?</summary>
+        <p>Sim, 100% online, de qualquer dispositivo, no seu ritmo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 15 — FECHAMENTO -->
+<section class="section section-soft" id="fechamento">
+  <div class="container split split-photo-first">
+    <div class="fechamento-photo">
+      <img src="assets/img/fechamento.jpg" alt="Ricardo Di Napoli cumprimentando um aluno, tom caloroso">
+    </div>
+    <div>
+      <h2>Você não precisa continuar procurando um lugar que te encaixe.</h2>
+      <p>Você pode parar de se sentir "sem religião definida" e começar a se reconhecer como o que sempre foi: alguém que enxerga o sagrado maior do que qualquer rótulo. O Clube Arandu é esse templo, aberto, sem dogma, sem hierarquia, sem julgamento, esperando por você todos os dias, não só quando tem live.</p>
+      <a href="#investimento" class="btn">QUERO FAZER PARTE DESSE TEMPLO</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Clube Arandu — O Templo do Universalismo Espiritual · Ricardo Di Napoli · Arandu Academy — Todos os direitos reservados
+</footer>
+
+<div class="cta-sticky" id="ctaSticky">
+  <a href="#investimento" class="btn btn-block">QUERO FAZER PARTE DO CLUBE ARANDU</a>
+</div>
+
+<script>
+  (function(){
+    var hero = document.getElementById('hero');
+    var sticky = document.getElementById('ctaSticky');
+    if(!hero || !sticky) return;
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        sticky.classList.toggle('show', !e.isIntersecting);
+      });
+    }, { threshold: 0 });
+    obs.observe(hero);
+  })();
+</script>
+
+</body>
+</html>
