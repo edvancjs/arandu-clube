@@ -166,18 +166,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight:600;
   }
 
-  /* HERO */
-  .hero-mosaic{ position:relative; height:190px; }
-  .hero-mosaic img{
-    position:absolute;
-    object-fit:cover;
-    border-radius:var(--radius);
-    box-shadow:0 14px 34px rgba(0,0,0,.55);
-    border:4px solid var(--bg-deep);
+  /* HERO — mockup de dispositivos (laptop + celular), sem fotos */
+  .device-mock{ position:relative; height:260px; margin-top:8px; }
+
+  .laptop-mock{ position:absolute; left:0; top:4px; width:72%; z-index:1; }
+  .laptop-screen{
+    background:linear-gradient(155deg, var(--bg-soft), var(--bg-deep));
+    border:3px solid #10160d;
+    border-radius:12px 12px 3px 3px;
+    aspect-ratio:16/10.5;
+    padding:14px 16px;
+    display:flex; flex-direction:column; justify-content:center; gap:8px;
+    box-shadow:0 20px 40px rgba(0,0,0,.55);
   }
-  .hero-mosaic .m1{ width:56%; height:190px; left:0; top:0; transform:rotate(-2deg); z-index:2; }
-  .hero-mosaic .m2{ width:38%; height:130px; right:0; top:0; transform:rotate(3deg); z-index:1; }
-  .hero-mosaic .m3{ width:34%; height:110px; right:2%; bottom:-56px; transform:rotate(-4deg); z-index:3; }
+  .laptop-base{
+    height:9px;
+    background:linear-gradient(180deg,#e7e7e7,#c9c9c9);
+    border-radius:0 0 8px 8px;
+    box-shadow:0 6px 14px rgba(0,0,0,.35);
+  }
+  .mini-tag{
+    display:inline-block; align-self:flex-start;
+    font-size:.58rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+    color:var(--lime); background:rgba(160,239,63,.14);
+    padding:3px 8px; border-radius:999px;
+  }
+  .mini-title{ font-family:'Fraunces',serif; font-weight:700; color:#fff; font-size:1.1rem; }
+  .mini-btn{
+    display:inline-block; align-self:flex-start;
+    background:var(--lime); color:var(--bg-deep); font-weight:700; font-size:.62rem;
+    padding:6px 12px; border-radius:6px;
+  }
+
+  .phone-mock{
+    position:absolute; right:2%; bottom:-14px; width:32%; z-index:2;
+    background:#0c0f0a; border-radius:22px; padding:8px;
+    box-shadow:0 20px 40px rgba(0,0,0,.6);
+  }
+  .phone-notch{
+    width:34%; height:6px; background:#0c0f0a;
+    border-radius:0 0 8px 8px; margin:0 auto 6px;
+  }
+  .phone-screen{
+    background:linear-gradient(165deg, var(--bg-soft), var(--bg-deep));
+    border-radius:16px; aspect-ratio:9/17.5;
+    padding:16px 12px; display:flex; flex-direction:column; justify-content:center; gap:10px;
+  }
+  .phone-logo{
+    font-family:'Fraunces',serif; font-weight:700; text-transform:uppercase; color:#fff;
+    font-size:.68rem; letter-spacing:.02em;
+  }
+  .phone-logo span{
+    font-family:'Yellowtail',cursive; text-transform:none; color:var(--lime);
+    font-size:1.3em; margin-left:3px;
+  }
+  .phone-tagline{
+    font-size:.66rem; line-height:1.4; color:var(--ink-soft); margin:0;
+  }
 
   /* IDENTIFICAÇÃO */
   .id-list{ margin:18px 0; }
@@ -225,7 +270,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     display:flex; gap:16px; align-items:center; margin:20px 0;
     background:var(--panel); border:1px solid var(--panel-line); border-radius:var(--radius); padding:18px 20px;
   }
-  .livro-cover .livro-icon{ font-size:2.2rem; flex:none; }
+  .livro-capa{
+    width:72px; height:72px; flex:none; object-fit:cover; border-radius:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,.5); background:#fff;
+  }
   .livro-cover strong{ display:block; color:var(--white); font-size:1.05rem; }
   .livro-cover span{ color:var(--ink-faint); font-size:.9rem; }
   .livro-list{ margin:18px 0; border-top:1px solid var(--line); }
@@ -334,10 +382,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .split.split-text-first{ grid-template-columns:1.2fr 1fr; }
     .split.split-photo-first{ grid-template-columns:1fr 1.2fr; }
 
-    .hero-mosaic{ height:440px; }
-    .hero-mosaic .m1{ width:60%; height:320px; left:0; top:20px; }
-    .hero-mosaic .m2{ width:42%; height:210px; right:0; top:0; }
-    .hero-mosaic .m3{ width:38%; height:180px; right:6%; bottom:0; }
+    .device-mock{ height:420px; }
+    .mini-tag{ font-size:.68rem; padding:4px 10px; }
+    .mini-title{ font-size:1.6rem; }
+    .mini-btn{ font-size:.78rem; padding:8px 16px; }
+    .phone-logo{ font-size:.82rem; }
+    .phone-tagline{ font-size:.8rem; }
 
     .id-photo img{ height:100%; min-height:360px; }
     .block-photo img{ height:100%; min-height:320px; }
@@ -372,10 +422,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#investimento" class="btn btn-block">QUERO FAZER PARTE DESSE TEMPLO</a>
       <p class="trustline">TODO MÊS · CONTEÚDO NOVO · COMUNIDADE ATIVA</p>
     </div>
-    <div class="hero-mosaic">
-      <img class="m1" src="assets/img/hero-1.jpg" alt="Ricardo Di Napoli sorrindo, retrato de corpo inteiro">
-      <img class="m2" src="assets/img/hero-2.jpg" alt="Ricardo Di Napoli falando ao microfone no Congresso Arandu">
-      <img class="m3" src="assets/img/hero-3.jpg" alt="Ricardo Di Napoli autografando livro para um aluno">
+    <div class="device-mock">
+      <div class="laptop-mock">
+        <div class="laptop-screen">
+          <span class="mini-tag">O Templo do Universalismo Espiritual</span>
+          <div class="mini-title">Clube Arandu</div>
+          <div class="mini-btn">Quero fazer parte</div>
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+      <div class="phone-mock">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-logo">Arandu <span>Clube</span></div>
+          <p class="phone-tagline">O Templo do Universalismo Espiritual na palma da sua mão.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -504,7 +566,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Toda segunda-feira, às 17h, Ricardo entra ao vivo pra trabalhar um livro com os membros do Clube, capítulo por capítulo, com o mesmo cuidado teológico de 40 anos de estudo. A transmissão é gratuita no YouTube, mas fica disponível só por 7 dias. Depois, sai do ar e vira exclusividade de quem é membro do Clube Arandu.</p>
 
     <div class="livro-cover">
-      <span class="livro-icon">📖</span>
+      <img class="livro-capa" src="assets/img/capa-livro-mediuns.jpg" alt="Capa do livro O Livro dos Médiuns, de Allan Kardec">
       <div>
         <strong>Primeira obra: O Livro dos Médiuns, de Allan Kardec</strong>
         <span>20 encontros, um por semana, cobrindo a obra inteira</span>
