@@ -178,10 +178,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight:600;
   }
 
-  /* HERO — mockup de dispositivos (imagem real) */
+  /* HERO — mockup de dispositivos (imagem real, fundo removido, flutuando) */
   .device-mock img{
-    width:100%; border-radius:var(--radius); border:1px solid var(--line);
-    box-shadow:0 20px 40px rgba(27,33,26,.14);
+    width:100%;
+    filter: drop-shadow(0 24px 20px rgba(27,33,26,.16)) drop-shadow(0 8px 8px rgba(27,33,26,.1));
   }
 
   /* IDENTIFICAÇÃO */
@@ -228,9 +228,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* CLUBE DO LIVRO — accordion dos 20 encontros */
   .livro-cover{ text-align:center; margin:28px 0 20px; }
   .livro-capa{
-    width:220px; max-width:70%; margin:0 auto 20px;
-    border-radius:10px;
-    box-shadow:0 24px 44px rgba(27,33,26,.22);
+    width:240px; max-width:75%; margin:0 auto 20px;
+    filter: drop-shadow(0 22px 18px rgba(27,33,26,.2)) drop-shadow(0 6px 6px rgba(27,33,26,.12));
   }
   .livro-cover strong{ display:block; color:var(--ink); font-size:1.15rem; margin-bottom:6px; }
   .livro-cover span{ color:var(--ink-faint); font-size:.9rem; }
@@ -375,13 +374,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="trustline">TODO MÊS · CONTEÚDO NOVO · COMUNIDADE ATIVA</p>
     </div>
     <div class="device-mock">
-      <img src="assets/img/hero-mockup-dispositivos.jpg" alt="Clube Arandu — O Templo do Universalismo Espiritual na palma da sua mão, mockup em laptop e celular">
+      <img src="assets/img/hero-mockup-dispositivos.webp" alt="Clube Arandu — O Templo do Universalismo Espiritual na palma da sua mão, mockup em laptop e celular">
     </div>
   </div>
 </section>
 
 <!-- BLOCO 2 — IDENTIFICAÇÃO -->
-<section class="section" id="identificacao">
+<section class="section section-soft" id="identificacao">
   <div class="container split split-text-first">
     <div>
       <h2>Você sente que não se encaixa em nenhuma religião?</h2>
@@ -504,7 +503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Toda segunda-feira, às 17h, Ricardo entra ao vivo pra trabalhar um livro com os membros do Clube, capítulo por capítulo, com o mesmo cuidado teológico de 40 anos de estudo. A transmissão é gratuita no YouTube, mas fica disponível só por 7 dias. Depois, sai do ar e vira exclusividade de quem é membro do Clube Arandu.</p>
 
     <div class="livro-cover">
-      <img class="livro-capa" src="assets/img/capa-livro-mediuns-3d.jpg" alt="Capa em 3D do livro O Livro dos Médiuns, de Allan Kardec">
+      <img class="livro-capa" src="assets/img/capa-livro-mediuns-3d.webp" alt="Capa em 3D do livro O Livro dos Médiuns, de Allan Kardec">
       <div>
         <strong>Primeira obra: O Livro dos Médiuns, de Allan Kardec</strong>
         <span>20 encontros, um por semana, cobrindo a obra inteira</span>
